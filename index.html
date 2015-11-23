@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta charset="UTF-8">
+	<title>リベンジ中夜祭</title>
+	<meta name="description" content="リベンジ★中夜祭2015">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta property="og:title" content="リベンジ★中夜祭2015" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="リベンジ★中夜祭2015のWEBサイトです。イベントの情報や企画についてお知らせします。" />
+<meta property="og:url" content="http://www.xn--yck5c4bvbx09z3ynvl7c.xyz/" />
+<meta property="og:image" content="http://www.xn--yck5c4bvbx09z3ynvl7c.xyz/image/fbcover.png" />
+<meta property="og:site_name" content="リベンジ★中夜祭2015" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="1613595768886753" />
+<link rel="stylesheet" href="./css/common.css">
+<link rel="stylesheet" href="./css/flexslider.css">
+<link rel="stylesheet" href="./css/jquery.remodal.css">
+<link rel="stylesheet" href="./css/top.css">
+<!--<script src="js/jquery-2.1.1.min.js"></script>-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="./js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="./js/jquery.remodal.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/top.js"></script>
+
+<!-- Tumblr投稿読み込み -->
+<script>
+$(function(){
+    domain ="revenge-kashiwa.tumblr.com";
+    api_key ="eIYpYaCpYZpNSkvvQhNiatn24J5FTUVpH59KVHNPMItP8jnKYb";
+    $.getJSON(
+        "http://api.tumblr.com/v2/blog/"+domain+"/posts/?api_key="+api_key+"&limit=3&jsonp=?",
+        function(data){
+            $.each(data['response']['posts'],function(){
+            	$(".post").append('<li class="blog-box"><div>'+ this['body'] +'</div>'+'<span class="blog-date">'+ this['date'] +'</span>'+'<h2>'+ this['title'] +'</h2>'+'<a href="http://revenge-kashiwa.tumblr.com/post/'+ this['id'] +'" target="_blank">'+ '投稿を読む' +'</a></li>');
+            });
+        }
+    );
+});
+</script>
+
+<!-- スムーズスクロール -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+<!-- スマホメニュー -->
+<script>
+$(function(){
+    $("#gNavi-sp").css("display","none");
+    $("#gNavi-spwrap").on("click", function() {
+        $("#gNavi-sp").slideToggle();
+    });
+    $(".close-sp").on("click", function() {
+        $("#gNavi-sp").slideToggle();
+    });
+});
+</script>
+
+<!-- analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-62280071-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<link rel="shortcut icon" href="./image/icon.ico">
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><a id="top" name="top"></a>
+<header class="clearfix">
+<nav id="navi" role="navigation">
+<ul id="gNavi" class="clearfix">
+<li><a href="#revengekashiwa">リベかし！</a></li>
+<li><a href="#join">参加について</a></li>
+<li><a href="./timeline/">当日のプログラム</a></li>
+<li><a href="#about">リベンジ★中夜祭2015とは</a></li>
+</ul>
+
+<div id="gNavi-spwrap" class="clearfix">
+<div class="gmenu">MENU</div>
+<div class="button-toggle">&#9776;</div>
+<div id="gNavi-sp">
+<ul>
+<li><a href="#top" class="close-sp">ページTOPへ</a></li>
+<li><a href="#about" class="close-sp">リベンジ★中夜祭2015とは</a></li>
+<li><a href="./timeline/">当日のプログラム</a></li>
+<li><a href="#join" class="close-sp">参加について</a></li>
+<li><a href="#revengekashiwa" class="close-sp">リベかし！</a></li>
+</ul>
+</div></div>
+
+</nav>
+<a href="#top" class="logo">
+<h1>リベンジ★中夜祭2015</h1>
+</a>
+</header>
+<!--/nav-->
+
+<div id="main-visual">
+<h2>リベンジ★中夜祭2015</h2>
+<ul><li>2015年9月12日（土）</li>
+<li><span class="small">-14:00～17:30（13:00開場）</span></li>
+<li>柏市民文化会館大ホール（１階席部分 996席）</li>
+<li>入場無料！</li>
+<li>全ての東葛飾高校卒業生・在学生、そして<br />全ての東葛飾高校職員・元職員</li>
+</ul>
+<div class="link-wrap clearfix">
+<a href="#join" class="link-button">参加する</a>
+<a href="./timeline/" class="link-button">プログラムを見る</a>
+</div>
+</div>
+<div id="main-info-sp">
+<ul><li>2015年9月12日（土）</li>
+<li><span class="small">-14:00～18:00（13:00開場）</span></li>
+<li>柏市民文化会館大ホール（１階席部分 996席）</li>
+<li>入場無料！</li>
+<li>全ての東葛飾高校卒業生・在学生、そして<br />全ての東葛飾高校職員・元職員</li>
+</ul>
+<a href="#join" class="link-button">参加する</a>
+<a href="./timeline/" class="link-button">プログラムを見る</a>
+</div>
+
+<section id="about"><a name="about"></a>
+<img class="h2" src="./image/h2_1.png" alt="リベンジ★中夜祭2015とは">
+<img class="bar" src="./image/bar.png" />
+<div class="movie-box">
+<div class="movie-container">
+<!-- <a href="http://www.dailymotion.com/video/x25x1qw_%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8-%E4%B8%AD%E5%A4%9C%E7%A5%AD2015-%E5%91%8A%E7%9F%A5vtr_school" target="_blank">
+<iframe src='http://www.dailymotion.com/embed/video/x25x1qw' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a> -->
+<a href="http://www.dailymotion.com/video/x25x1qw_%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8-%E4%B8%AD%E5%A4%9C%E7%A5%AD2015-%E5%91%8A%E7%9F%A5vtr_school" target="_blank">
+<iframe src='http://www.dailymotion.com/embed/video/x2z6yjk' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a>
+</div>
+</div>
+<p>
+全ての東葛生に向けた、1日限りの大イベントを執り行います！
+東葛文化祭Ⅱ部の1日目に行われるのが恒例だった中夜祭。
+それを、大人になった今、もう一度再現します！<br>
+<br>
+特別ゲストは、東葛出身のあの人？！<br>
+ダンス部、軽音楽部、吹奏楽部のOB講演？！<br>
+当時は無かった東葛ミスコン？！<br>
+名物先生がステージに勢揃い？！<br>
+<br>
+企画内容は、徐々に明らかにしていきますが、
+とにかく、東葛を卒業した全ての人が、東葛に関わった全ての人が楽しめるイベントです！
+</p>
+</section><!-- /about -->
+
+<section id="join"><a name="join"></a>
+<div class="glass-box"><span>
+<img class="h2" src="./image/h2_2.png" alt="「リベンジ★中夜祭」に参加する">
+
+<!-- <a class="join-box" href="http://goo.gl/forms/NvutMtXMlM">
+<h3>■中夜祭でパフォーマンスする</h3>
+<p>部活の仲間、旧●年●組、ダンス部じゃないけどダンス好きなメンバー、大学からはじめたアカペラグループや当時の放課後ダベリメンバーなど……。どんな団体でも大歓迎。気になったら、まずはこちらのフォームから登録してください。</p>
+</a> -->
+
+
+<a class="join-box" href="https://docs.google.com/forms/d/1mhI69ff_T1iGSJYMIRJpDCSl7CUXLVsNXHKDmzvsW5g/viewform">
+<h3>■事前アンケートで企画に参加する【NEW】</h3>
+<p>ステージ企画のいくつかに、アンケートで誰でも参加可能！ 当日参加できない人も中夜祭を盛り上げよう！</p>
+</a>
+<a class="join-box" href="./timeline">
+<h3>■当日のプログラムを見る</h3>
+<p>リベンジ★中夜祭のコンテンツが決定！ なんとあの大物ゲストも参加予定。いますぐチェックして中夜祭に備えよう。</p>
+</a>
+<a class="join-box" href="https://www.facebook.com/events/1456805611309251/">
+<h3>■客席で中夜祭を楽しむ</h3>
+<p>Facebookのイベントで「参加」を押してね。当日柏市民文化会館に来るだけ。参加を決めた人は、ぜひFacebookのイベントページで行くことをアピールしましょう！ 中夜祭を口実に、当時好きだったあの子を誘ってみては？</p>
+</a>
+</span>
+</div>
+</section><!-- /join -->
+
+
+<section id="revengekashiwa"><a name="revengekashiwa"></a>
+<img class="h2" src="./image/h2_3.png" alt="リベかし！">
+<img class="bar" src="./image/bar.png" />
+<p>「リベかし」は、柏の魅力にリベンジする、リベンジ★中夜祭の裏企画。実行委員が独断と偏見で、柏の隠れた魅力や、隠れてないけど懐かしいあの店など、バシバシ紹介していきます!! TwitterやFacebookでも見られるので、フォローしてCheckしてね！</p>
+<a class="link-button" href="http://revenge-kashiwa.tumblr.com/" target="_blank">リベかし！のブログはこちら</a>
+<!--<div class="comment-box">
+<p>リベンジ★中夜祭をフォローして、イベントやリベかし！の最新情報をGET</p>
+<div class="fb-like" data-href="https://www.facebook.com/revemge.chuyasai" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div></div>-->
+<div class="blog-area clearfix">
+<ul class="post clearfix"></ul>
+</div>
+</section><!-- /revengekashiwa -->
+
+<footer role="contentinfo">
+<ul class="footSns clearfix">
+<li class="facebook"><a href="https://www.facebook.com/revemge.chuyasai" target="_blank"><img src="./image/fbicon.png" alt="facebook"></a></li>
+<li class="twitter"><a href="https://twitter.com/revenge_chu" target="_blank"><img src="./image/twicon.png" alt="twitter"></a></li></ul>
+<p id="footCopy">c2015 Revenge Chuyasai</p>
+</footer>
+
+</body>
+</html>

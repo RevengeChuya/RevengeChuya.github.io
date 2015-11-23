@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta charset="UTF-8">
+	<title>リベンジ中夜祭 │ 当日のプログラム</title>
+	<meta name="description" content="リベンジ★中夜祭2015">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta property="og:title" content="リベンジ★中夜祭2015　当日タイムテーブル" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="リベンジ★中夜祭2015の当日プログラムが決定！あの大物ゲストの企画を見逃すな" />
+<meta property="og:url" content="http://www.xn--yck5c4bvbx09z3ynvl7c.xyz/timeline/" />
+<meta property="og:image" content="http://www.xn--yck5c4bvbx09z3ynvl7c.xyz/image/Facebook20150727_revenge.png" />
+<meta property="og:site_name" content="リベンジ★中夜祭2015" />
+<meta property="og:locale" content="ja_JP" />
+<meta property="fb:app_id" content="1613595768886753" />
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/flexslider.css">
+<link rel="stylesheet" href="../css/jquery.remodal.css">
+<link rel="stylesheet" href="../css/top.css">
+<!--<script src="js/jquery-2.1.1.min.js"></script>-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="../js/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="../js/jquery.remodal.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../js/top.js"></script>
+
+<!-- Tumblr投稿読み込み -->
+<script>
+$(function(){
+    domain ="revenge-kashiwa.tumblr.com";
+    api_key ="eIYpYaCpYZpNSkvvQhNiatn24J5FTUVpH59KVHNPMItP8jnKYb";
+    $.getJSON(
+        "http://api.tumblr.com/v2/blog/"+domain+"/posts/?api_key="+api_key+"&limit=3&jsonp=?",
+        function(data){
+            $.each(data['response']['posts'],function(){
+            	$(".post").append('<li class="blog-box"><div>'+ this['body'] +'</div>'+'<span class="blog-date">'+ this['date'] +'</span>'+'<h2>'+ this['title'] +'</h2>'+'<a href="http://revenge-kashiwa.tumblr.com/post/'+ this['id'] +'" target="_blank">'+ '投稿を読む' +'</a></li>');
+            });
+        }
+    );
+});
+</script>
+
+<!-- スムーズスクロール -->
+<script>
+$(function(){
+   // #で始まるアンカーをクリックした場合に処理
+   $('a[href^=#]').click(function() {
+      // スクロールの速度
+      var speed = 400; // ミリ秒
+      // アンカーの値取得
+      var href= $(this).attr("href");
+      // 移動先を取得
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      // 移動先を数値で取得
+      var position = target.offset().top;
+      // スムーススクロール
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+</script>
+
+<!-- スマホメニュー -->
+<script>
+$(function(){
+    $("#gNavi-sp").css("display","none");
+    $("#gNavi-spwrap").on("click", function() {
+        $("#gNavi-sp").slideToggle();
+    });
+    $(".close-sp").on("click", function() {
+        $("#gNavi-sp").slideToggle();
+    });
+});
+</script>
+
+<!-- analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-62280071-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<link rel="shortcut icon" href="../image/icon.ico">
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><a id="top" name="top"></a>
+<header class="clearfix">
+<nav id="navi" role="navigation">
+<ul id="gNavi" class="clearfix">
+<li><a href="../#revengekashiwa">リベかし！</a></li>
+<li><a href="../#join">参加について</a></li>
+<li><a href="#top">当日のプログラム</a></li>
+<li><a href="../#about">リベンジ★中夜祭2015とは</a></li>
+</ul>
+
+<div id="gNavi-spwrap" class="clearfix">
+<div class="gmenu">MENU</div>
+<div class="button-toggle">&#9776;</div>
+<div id="gNavi-sp">
+<ul>
+<li><a href="../" class="close-sp">TOPへ</a></li>
+<li><a href="../#about" class="close-sp">リベンジ★中夜祭2015とは</a></li>
+<li><a href="#top">当日のプログラム</a></li>
+<li><a href="../#join" class="close-sp">参加について</a></li>
+<li><a href="../#revengekashiwa" class="close-sp">リベかし！</a></li>
+</ul>
+</div></div>
+
+</nav>
+<a href="../" class="logo">
+<h1>リベンジ★中夜祭2015</h1>
+</a>
+</header>
+<!--/nav-->
+
+<div id="timeline-wrap">
+<h2>リベンジ★中夜祭2015 当日プログラム決定！</h2>
+<p class="timeline-date">2015年9月12日（土）-14:00～17:30（13:00開場）<br />
+@柏市民文化会館大ホール</p>
+
+<section id="timeline">
+<div class="movie-box">
+<div class="movie-container">
+<a href="http://www.dailymotion.com/video/x25x1qw_%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8-%E4%B8%AD%E5%A4%9C%E7%A5%AD2015-%E5%91%8A%E7%9F%A5vtr_school" target="_blank">
+<iframe src='http://www.dailymotion.com/embed/video/x2z6yjk' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></a>
+</div>
+</div>
+
+<h3>2015.09.12(土) タイムライン</h3>
+<table class="timeline-table">
+<tr>
+<td>14:00</td>
+<td><p class="title"><span>開会式</span></p></td>
+</tr>
+<tr>
+<td>14:15</td>
+<td><p class="title">TDC returns NEXUS 2015 DANCE SHOW</p><p class="team"><span>東葛ダンス部OB・OG</span></p><p class="content">アラサーOB&OGから現役部員までが大集合！東葛ダンス部史上最多人数でのパフォーマンスです！</p></td>
+</tr>
+<tr>
+<td>14:45</td>
+<td><p class="title">世界一受けたい出張講義</p><p class="team"><span>武田康男先生</span></p><div class="content-box"><p class="content2">東葛を卒業して、この先生を知らない人はいない！武田康男先生による、リベンジ★中夜祭でしか見られない、出張講義！必見です！</p><div class="profile clearfix"><img src="../image/yasuo.jpg" /><span>武田康男《空の探検家》</span><p>気象予報士。空の写真家。<br><br>
+1976〜1979 東葛飾高校在籍<br>
+2004〜2011 東葛飾高校教諭<br><br>
+第50次南極地域観測越冬隊員として南極へ派遣され、東葛高校と生中継授業を展開してくれた武田先生。東葛高校教諭時代は写真や映像を使った授業で、たくさんの生徒をわくわくさせた。現在は大学で地学や自然環境を教えている。また、本や雑誌等の執筆・監修、講演、テレビ・ラジオ出演などにも取り組んでいる。</p></div></td>
+</tr>
+<tr>
+<td>15:00</td>
+<td><p class="title">格付けし合う部活動達</p><p class="team"><span>各部活代表者</span><br>(サッカー部、野球部、バスケ部、水球部、フェンシング部、鉄道研究部、演劇部、吹奏楽部、ファンタジィ部 etc）</p><p class="content">東葛高校に存在する、個性豊かな部活動の数々…。その中で、本当に“イケてる”部活は何なのか！遂にその長きわたる闘いに決着が！<a class="googleform" href="https://docs.google.com/forms/d/1mhI69ff_T1iGSJYMIRJpDCSl7CUXLVsNXHKDmzvsW5g/viewform?usp=send_form" target="_blank">→アンケートでこの企画に参加！</a></p></td>
+</tr>
+<tr>
+<td>15:30</td>
+<td><p class="title"><span>休憩</span></p></td>
+</tr>
+<tr>
+<td>15:45</td>
+<td><p class="title">あの名曲をもう一度</p><p class="team"><span>リベンジ☆合唱祭有志メンバー</span></p><p class="content">昨年大好評の内に幕を閉じた、リベンジ☆合唱祭の有志メンバーが集結！誰もが知ってるあの合唱曲や、懐かしのあの曲を披露！？</p></td>
+</tr>
+<tr>
+<td>15:55</td>
+<td><p class="title">名物先生トークショー</p><p class="team"><span>東葛高校の新旧教員</span><br>(現在参加予定→武田先生、四ノ宮先生、川村先生、高橋先生、周藤先生、福原先生、葛谷先生、堀内先生  他にも多くの先生方が参加予定です！)</p><p class="content">東葛の元・現教員の皆さまが、東葛のあんなことやこんなこと、赤裸々に語って下さいます！懐かしい話から驚愕のエピソードまで、久しぶりに高校時代を思い起こしてみませんか？
+あの先生方が真剣に悩み相談してくれる！？<a class="googleform" href="https://docs.google.com/forms/d/1mhI69ff_T1iGSJYMIRJpDCSl7CUXLVsNXHKDmzvsW5g/viewform?usp=send_form" target="_blank">→アンケートでこの企画に参加！</a></p></td>
+</tr>
+<tr>
+<td>16:25</td>
+<td><p class="title">Coming soon！</p><!-- <p class="team"></p><p class="content"></p> --></td>
+</tr>
+<tr>
+<td>16:40</td>
+<td><p class="title">SPECIAL LIVE</p><p class="team"><span>サンプラザ中野くん、パッパラー河合</span></p><div class="content-box"><p class="content2">東葛の卒業生を代表する、このお二人が母校に戻ってくる！特別ライブに加えて、当時を振り返るトークショー企画も！絶対に見逃せない！</p><div class="profile clearfix"><img src="../image/nakano.jpg" /><span>サンプラザ中野くん</span><p>歌手生活３０周年を記念して、バイきんぐ小峠氏とスペシャルユニット”坊坊主”を結成！<br>
+<a href="http://www.teichiku.co.jp/artist/boubouz/" target="_blank">http://www.teichiku.co.jp/artist/boubouz/</a><br><br>2年間のアマチュアバンド活動を経て1984年に爆風スランプのヴォーカルとしてデビュー。パワフルで奥深いサウンドにユーニークで斬新なパフォーマンスが話題を呼び,若者を中心に圧倒的支持を得る。<br>88年「Ｒｕｎｎｅｒ」の爆発的ヒットにより、更に幅広いファンを獲得。その後も「リゾ・ラバ（resort　lovers）」（‘89）「大きな玉ねぎの下で～はるかなる想い～」（‘89）｢旅人よ～The　Longest　Journey～｣（‘96）をはじめ数々の名曲をリリースしミュージックシーンに確固たる地位を築く。<br>そして、１５周年を迎えた１９９９年4月に爆風スランプは活動休止宣言。その後は、「サンプラザ中野」として「歌手」「健康」「株」を中心に、執筆など幅広い活動をスタートさせる。<br>2007年7月11日にはサンプラザ中野としては初のソロアルバム「３ｒｄ LOVE/The Best Ballads｣（Aer-born)をリリース。またアニメクリエーターとしても活動をスタートし、2007年7月からはＴＸ系「ファイテンションスクール」内にて『本マグロトロ太郎』の脚本、製作、声優、主題歌を担当。<br>2008年1月からは「サンプラザ中野くん」と名前をリニューアルし活動している。そして、２０１１年３月に起こった東日本大震災の直後より、災害を忘れずに、長い復興の道のりを一緒に歩んで行こうというメッセージを込め、震災後「ＴＯＭＯＳＨＩＢＩ～地震が来たら～」を発表。世界十数カ国で配信中。最新楽曲は、「We Love RUNNER」（高橋尚子杯儀武清流ハーフマラソン公式テーマソング）<br>最新著書は、「サンプラザ中野くんの125歳まで楽しく生きる健幸大作戦」（ファミマドットコムより発売）また、２０１４年５月には、ガチャピン・ムックと共に、社会全体で子供の体験活動を推進していく、「体験の風をおこそう運動」（国立青少年教育振興機構主催）の応援団にも就任している。</p></div><div class="profile clearfix"><img src="../image/kawai.jpg" /><span>パッパラー河合</span><p>1984年に爆風スランプのギタリストとしてデビュー。今年で31年目、数々のヒット曲を現在も各地で元気に演奏中！<br><br>
+プロデューズ<br>
+1996年ポケットビスケッツから自らの出身地、柏市の御当地アイドル・コズミック☆倶楽部まで様々な音楽プロデュースを手掛けている<br><br>
+アニメ<br>
+ケロロ軍曹等のＴＶ主題歌や涼宮ハルヒ・朝比奈みくる～リミックス制作等<br><br>
+映画音楽<br>
+2015カンヌ映画祭に出品された「峠」の音楽を担当している</p></div></div></td>
+</tr>
+<tr>
+<td>17:30</td>
+<td><p class="title"><span>閉会式</span></p></td>
+</tr>
+</table>
+
+<p class="join-text">リベンジ★中夜祭への参加は、Facebookから</p>
+<a href="https://www.facebook.com/events/1456805611309251/" class="link-button" target="_blank">参加する</a>
+
+<p class="back"><a href="../">TOPページに戻る</a></p>
+
+</section><!-- /timeline -->
+
+</div>
+
+
+<footer role="contentinfo">
+<ul class="footSns clearfix">
+<li class="facebook"><a href="https://www.facebook.com/revemge.chuyasai" target="_blank"><img src="../image/fbicon.png" alt="facebook"></a></li>
+<li class="twitter"><a href="https://twitter.com/revenge_chu" target="_blank"><img src="../image/twicon.png" alt="twitter"></a></li></ul>
+<p id="footCopy">c2015 Revenge Chuyasai</p>
+</footer>
+
+</body>
+</html>
